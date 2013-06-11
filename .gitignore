@@ -1,0 +1,93 @@
+# Compiled Source
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.obj
+*.pdb
+*.snk
+*.cache
+*.vspscc
+*.suo
+*.bak
+*.scc
+*.lib
+*.log
+*.sbr
+*.ilk
+*.tlh
+*.tlb
+*._i.c
+*._p.c
+*.pch
+*.ncb
+*.aps
+*.user
+*.iml
+*.publish.xml
+bin/
+obj/
+/.build/
+/.libs/*.*
+!.libs/**/*.dll
+!.libs/**/*.pdb
+!.tools/**/*.dll
+!.tools/**/*.exe
+
+# Images
+
+* ico
+*.png
+*.jpg
+*.gif
+*.bmp
+
+# Web
+
+*..sass-cache
+
+# NuGet
+
+/.nuget/
+!.nuget/repositories.config
+/.packages/
+!.packages/repositories.config
+/packages/
+!packages/repositories.config
+
+# Project Settings
+
+.idea/
+*.DotSettings
+*..StyleCop
+
+# Packages
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and Databases
+
+*.log
+*.sql
+*.sqlite
+
+# OS Files
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

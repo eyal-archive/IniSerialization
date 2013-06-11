@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ace.Ini", "Ace.Ini\Ace.Ini.csproj", "{886BC38B-6569-4F7E-AB90-411B3D5EA9F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ace.Tests.Ini", "Ace.Ini.Tests\Ace.Tests.Ini.csproj", "{062221C2-479B-4298-908B-44EED264F29B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{60A94765-A487-44D7-ADD0-AE69D26EEB63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B130EF77-BC9D-44DF-904A-8897C8368A4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{886BC38B-6569-4F7E-AB90-411B3D5EA9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886BC38B-6569-4F7E-AB90-411B3D5EA9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886BC38B-6569-4F7E-AB90-411B3D5EA9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886BC38B-6569-4F7E-AB90-411B3D5EA9F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062221C2-479B-4298-908B-44EED264F29B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062221C2-479B-4298-908B-44EED264F29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062221C2-479B-4298-908B-44EED264F29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062221C2-479B-4298-908B-44EED264F29B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{886BC38B-6569-4F7E-AB90-411B3D5EA9F8} = {60A94765-A487-44D7-ADD0-AE69D26EEB63}
+		{062221C2-479B-4298-908B-44EED264F29B} = {B130EF77-BC9D-44DF-904A-8897C8368A4E}
+	EndGlobalSection
+EndGlobal
