@@ -28,8 +28,11 @@ Properties {
 #######################
 
 Task Default -Depends Compile-And-Test, Artifacts
-Task Compile -Depends Clean, Nuget, Default-Build
+Task Compile -Depends Clean, Nuget, Release
 Task Compile-And-Test -Depends Compile, Unit-Test
+
+# Setup
+#######################
 
 # Deletes the output directories
 Task Clean {
@@ -46,6 +49,24 @@ Task Clean {
 		Delete "$projDir\bin"
 		Delete "$projDir\obj"
 	}
+}
+
+# Downloads the required packages using NuGet
+Task Nuget {
+	foreach($projInfo in Get-Projects-Info)
+	{
+		$configPath = "$($projInfo.Directory)\packages.config"
+		
+		if ([System.IO.File]::Exists($configPath))
+		{
+			& $(Get-Tool "NuGet") install $configPath -o "$nugetPackagePath"
+		}
+	}
+
+    # Creates or updates the 'nuget.config' file
+   	$xml = [XML]("<settings><repositoryPath>.\" + $nugetPackageDir + "</repositoryPath></settings>")
+	
+	$xml.Save("$baseDir\nuget.config");
 }
 
 # Copies artifacts to the build directory
@@ -81,36 +102,16 @@ Task Artifacts {
     }
 }
 
+# Prints an empty line after each task
 TaskTearDown {
     Write-Host ""
 }
 
-# NuGet
-#######################
-   
-# Downloads the required packages using NuGet
-Task Nuget {
-	foreach($projInfo in Get-Projects-Info)
-	{
-		$configPath = "$($projInfo.Directory)\packages.config"
-		
-		if ([System.IO.File]::Exists($configPath))
-		{
-			& $(Get-Tool "NuGet") install $configPath -o "$nugetPackagePath"
-		}
-	}
-
-    # Creates or updates the 'nuget.config' file
-   	$xml = [XML]("<settings><repositoryPath>.\" + $nugetPackageDir + "</repositoryPath></settings>")
-	
-	$xml.Save("$baseDir\nuget.config");
-}
-
-# MSBuild
+# Compilation
 #######################
 
 # Builds all projects within the directory of the solution
-Task Default-Build {
+Task Release {
 	foreach($projInfo in Get-Projects-Info)
 	{
 		$projFile = $projInfo.FullName
@@ -126,7 +127,7 @@ Task Default-Build {
 	}
 }
 
-# xUnit
+# Tests
 #######################
 
 # Finds tests and execute them using xUnit
