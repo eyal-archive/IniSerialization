@@ -17,10 +17,10 @@ Properties {
 	$msbuildCpuCount = [System.Environment]::ProcessorCount / 2
 	$msbuildParralel = $true
 	# NuGet
-	$nugetPackageDir = ".packages"
+	$nugetPackageDir = "packages"
     $nugetPackagePath = "$baseDir\$nugetPackageDir"
     # Release
-    $artifactsPath = "$baseDir\.build"
+    $artifactsPath = "$baseDir\build"
     $artifacts = @("Ace.Ini.dll")
 }
 
