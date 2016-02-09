@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("Ace.Ini")]
+[assembly: AssemblyTitle("IniSerialization")]
 [assembly: AssemblyDescription("Provides functionality to read and manipulate INI files.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Eyal Shilony")]
+[assembly: AssemblyCompany("Eyal Solnik")]
 [assembly: AssemblyProduct("Ace.Ini")]
-[assembly: AssemblyCopyright("© 2013 Eyal Shilony, All rights reserved.")]
+[assembly: AssemblyCopyright("© 2013 Eyal Solnik, All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

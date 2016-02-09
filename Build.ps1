@@ -21,7 +21,7 @@ Properties {
     $nugetPackagePath = "$baseDir\$nugetPackageDir"
     # Release
     $artifactsPath = "$baseDir\build"
-    $artifacts = @("Ace.Ini.dll")
+    $artifacts = @("IniSerialization.dll")
 }
 
 # Tasks
