@@ -2,7 +2,7 @@
 {
 	using FluentAssertions;
 
-	using Xunit.Extensions;
+	using Xunit;
 
 	public class IniKeyAttributeTests
 	{

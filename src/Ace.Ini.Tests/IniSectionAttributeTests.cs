@@ -2,7 +2,7 @@
 {
 	using FluentAssertions;
 
-	using Xunit.Extensions;
+	using Xunit;
 
 	public class IniSectionAttributeTests
 	{
@@ -37,7 +37,7 @@
 				string name = attribute.SectionName;
 
 				// Assert
-				name.Should().NotBeBlank();
+				name.Should().NotBeNullOrWhiteSpace();
 			}
 		}
 	}

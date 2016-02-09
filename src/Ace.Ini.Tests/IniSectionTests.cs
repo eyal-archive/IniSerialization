@@ -3,7 +3,6 @@
 	using FluentAssertions;
 
 	using Xunit;
-	using Xunit.Extensions;
 
 	public class IniSectionTests
 	{
@@ -235,8 +234,7 @@
 				keys.Add(new IniKey("Name1", "Value1"));
 				keys.Add(new IniKey("Name2", "Value2"));
 
-				string[] expectedData = new[]
-				{
+				string[] expectedData = {
 					"Name1=Value1", 
 					"Name2=Value2"
 				};
@@ -259,8 +257,7 @@
 				keys.Add(new IniKey("Name1", "Value1"));
 				keys.Add(new IniKey("Name2", "Value2"));
 
-				string[] expectedData = new[]
-				{
+				string[] expectedData = {
 					"[Section]", 
 					"Name1=Value1", 
 					"Name2=Value2"

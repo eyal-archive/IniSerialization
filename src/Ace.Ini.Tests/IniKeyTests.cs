@@ -3,7 +3,6 @@
 	using FluentAssertions;
 
 	using Xunit;
-	using Xunit.Extensions;
 
 	public class IniKeyTests
 	{
