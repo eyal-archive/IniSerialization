@@ -1,7 +1,5 @@
-Ace.Ini
-=======
-
-##### Ace libraries are few libraries that are developed as part of another project that I decided to release to the public.
+IniSerialization
+=========
 
 This library is responsible to read and manipulate INI files.
 
@@ -9,7 +7,7 @@ Currently, it contains a parser and a pretty basic deserializer.
 
 ### Build Requirements
 
-* .NET Framework 4.x
+* .NET Framework 4.6.1
 
 ### Examples
 
