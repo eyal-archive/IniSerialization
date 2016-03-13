@@ -1,4 +1,4 @@
-﻿namespace Ace.Ini
+﻿namespace IniSerialization.Ini
 {
 	using System;
 	using System.Diagnostics.Contracts;

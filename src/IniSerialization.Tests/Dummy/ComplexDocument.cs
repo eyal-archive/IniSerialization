@@ -1,4 +1,4 @@
-namespace Ace.Ini.Tests.Dummy
+namespace IniSerialization.Ini.Tests.Dummy
 {
 	internal class ComplexDocument
 	{

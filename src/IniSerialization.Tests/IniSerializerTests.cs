@@ -1,8 +1,8 @@
-﻿namespace Ace.Ini.Tests
+﻿namespace IniSerialization.Ini.Tests
 {
 	using System;
 
-	using Ace.Ini.Tests.Dummy;
+	using IniSerialization.Ini.Tests.Dummy;
 
 	using FluentAssertions;
 

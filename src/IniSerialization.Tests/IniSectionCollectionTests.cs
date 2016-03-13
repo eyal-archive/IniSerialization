@@ -1,4 +1,4 @@
-﻿namespace Ace.Ini.Tests
+﻿namespace IniSerialization.Ini.Tests
 {
 	using System.Linq;
 

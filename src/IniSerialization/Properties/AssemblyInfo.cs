@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Provides functionality to read and manipulate INI files.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Eyal Solnik")]
-[assembly: AssemblyProduct("Ace.Ini")]
+[assembly: AssemblyProduct("IniSerialization")]
 [assembly: AssemblyCopyright("© 2013 Eyal Solnik, All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
